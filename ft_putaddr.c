@@ -14,8 +14,11 @@ int ft_puthexal(unsigned long l) {
 
 int ft_putaddr(void * add) {
   unsigned long l; 
-  int size = 0;
+  int size;
 
+  if (!add) 
+    return write(1, "(nil)", 5);
+  size = 0;
   l = (unsigned long)add;
   size += write(1, "0x", 2);
   size+= ft_puthexal(l);
