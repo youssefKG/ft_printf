@@ -9,7 +9,6 @@ int ft_puthexa_upp_low(long n, char *hex) {
   return count + 1;
 }
 
-
 int ft_puthexa(long n, int format) {
   if (n < 0)
     n = -n;

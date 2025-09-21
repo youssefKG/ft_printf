@@ -3,8 +3,6 @@
 #include "ft_printf.h"
 #include "./lib/libft.h"
 
-
-
 int ft_print_arg(char format, va_list args) {
   if (format == 's') 
    return ft_putstr(va_arg(args, char *));

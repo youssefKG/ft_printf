@@ -2,8 +2,8 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 AR = ar rsc
 
-NAME = ./ft_print.a
-SRC = ft_printf.c  ft_puthexa.c ./ft_putunsigned.c ./ft_putaddr.c ./ft_putnbr.c ./ft_putstr.c ./ft_putchar.c
+NAME = ./libftprintf.a
+SRC = ft_printf.c  ft_puthexa.c ./ft_putunsigned.c ./ft_putaddr.c ./ft_putnbr.c ./ft_putstr.c ./ft_putchar.c ft_printf.c
 OBJ = $(SRC:%.c=%.o)
 
 LIBFT_DIR = ./lib

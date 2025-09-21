@@ -7,5 +7,6 @@ int ft_putaddr(void *add);
 int ft_putstr(char *s);
 int ft_putnbr(int n);
 int ft_putchar(int n);
+int ft_printf(char *s, ...);
 
 #endif // !FT_PRINTF_HEADER
